@@ -1,0 +1,15 @@
+{
+  "name": "swarm",
+  "version": "0.3",
+  "scm": "https://github.com/docker/swarm.git",
+  "maintainer": "support@mesosphere.io",
+  "description": "Swarm is a Docker-native clustering system.",
+  "framework": true,
+  "tags": ["mesosphere", "framework", "docker"],
+  "images": {
+    "icon-small": "https://downloads.mesosphere.io/swarm/assets/icon-service-swarm-small.png",
+    "icon-medium": "https://downloads.mesosphere.io/swarm/assets/icon-service-swarm-medium.png",
+    "icon-large": "https://downloads.mesosphere.io/swarm/assets/icon-service-swarm-large.png"
+  },
+  "postInstallNotes": "Swarm is installed in your cluster. Please use dcos swarm to launch docker containers."
+}

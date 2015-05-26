@@ -1,0 +1,19 @@
+{
+  "id": "swarm",
+  "cpus": 1,
+  "mem": 512,
+  "instances": 1,
+  "cmd": "--debug m -H :$PORT0 -c mesos-experimental {{mesos.master}}",
+  "ports": [
+    0
+  ],
+  "container": {
+    "type": "DOCKER",
+    "docker": {
+      "image": "mesosphere/swarm:mesos",
+      "network": "HOST"
+    }
+  },
+  "healthChecks": [
+  ]
+}
